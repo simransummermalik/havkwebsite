@@ -29,7 +29,7 @@ const Contributors = () => {
 
           <div className="content-card team-profile">
             <div className="profile-avatar">VS</div>
-            <h3>Vedansh Shenoy</h3>
+            <h3>Vedanth Shenoy</h3>
             <p className="role">Co-Founder</p>
             <p style={{ marginBottom: "2rem" }}>
             </p>
