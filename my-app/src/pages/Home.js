@@ -22,20 +22,15 @@ const Home = () => {
               >
                 Join Community
               </a>
-              <a
-                href="https://havk-hacking-the-desert.devpost.com/"
-                className="btn btn-secondary btn-large"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Join Hackathon
-              </a>
+              <Link to="/hackathons" className="btn btn-secondary btn-large">
+                Learn About Hackathons
+              </Link>
             </div>
           </div>
 
           <div className="hero-video-section">
-            <Link to="/hacking-the-desert" className="hackathon-link">
-              Current Live Hackathon - Click Here
+            <Link to="/hackathons" className="hackathon-link">
+              Next Hackathon Coming Soon - Click Here
             </Link>
             <div className="hero-video">
               <iframe
@@ -45,6 +40,22 @@ const Home = () => {
                 allowFullScreen
               ></iframe>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Compact Winners Announcement */}
+      <section className="content-section" style={{ padding: "2rem 2rem 1rem" }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
+          <div className="content-card" style={{ padding: "1.5rem" }}>
+            <h3 style={{ marginBottom: "0.75rem", fontSize: "1.3rem" }}>🎉 HAVK: Hacking the Desert Winners!</h3>
+            <p style={{ marginBottom: "1rem", color: "var(--text-secondary)", fontSize: "0.95rem" }}>
+              Congratulations to Shrinav Loka (AquaSpot), Hunter Forsythe (Where's the Well?), and Neha Kandpal
+              (DesertSmart)!
+            </p>
+            <Link to="/hacking-the-desert" className="btn btn-primary">
+              View All Winners & Projects
+            </Link>
           </div>
         </div>
       </section>
@@ -122,11 +133,11 @@ const Home = () => {
 
             <div className="action-card">
               <div>
-                <h3>Hackathon</h3>
-                <p>Submit your project</p>
+                <h3>Hackathons</h3>
+                <p>See past winners & upcoming events</p>
               </div>
-              <Link to="/hacking-the-desert" className="btn btn-primary">
-                Join Now
+              <Link to="/hackathons" className="btn btn-primary">
+                Learn More
               </Link>
             </div>
 
@@ -136,7 +147,7 @@ const Home = () => {
                 <p>Guide participants</p>
               </div>
               <Link to="/mentors" className="btn btn-primary">
-                Learn More
+                Apply
               </Link>
             </div>
 
